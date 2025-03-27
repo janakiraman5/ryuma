@@ -1,0 +1,18 @@
+<html>
+     {% extends "Crudi/base.html" %}
+    {%block info%}
+    <h1>Student Details</h1>
+    <table>
+        <thead>
+            <th>sname</th>
+            <th>sclass</th>
+        </thead>
+        <tr>
+            {%for st in student%}
+            <td>{{st.sname}}</td>
+            <td>{{st.sclass}}</td>
+        </tr>
+        {%endfor%}
+    </table>
+    {%endblock%}
+</html>
