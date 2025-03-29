@@ -7,5 +7,5 @@ def retireview_list(request):
     return render(request, 'Crudi/templates/index.html',{'student':student})
 
 def Create_view(request):
-    forms = StudentForm
+    forms = StudentForms
     return render(request,'Crudi/Create.html',{form : form})
