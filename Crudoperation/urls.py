@@ -23,4 +23,5 @@ urlpatterns = [
 
     path('admin/', admin.site.urls),
     path('check/',views.retireview_list,name='check'),
+    path('create/',views.Create_views,name = 'Create'),
 ]
