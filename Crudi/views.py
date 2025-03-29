@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from Crudi.models import Student
+from Crudi.forms import StudentForms
 
 # Create your views here.
 def retireview_list(request):
