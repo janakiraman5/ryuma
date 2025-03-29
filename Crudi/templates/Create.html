@@ -1,0 +1,11 @@
+<html>
+  {% extends 'base.html'%}
+  {% block info%} 
+  <h1> Add Students Detail</h1>
+<form method = 'POST'>
+{{form.as_p}}
+{%csrf_token%}
+<input type = 'Submit' value = 'Add Student'>
+</form>
+{%endblock%}
+</html>
