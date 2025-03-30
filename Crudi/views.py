@@ -9,4 +9,8 @@ def retireview_list(request):
 
 def Create_view(request):
     forms = StudentForms
+    if request.method = 'POST'
+    forms = StudentForm(request.POST)
+    if form.is_valid():
+        forms.save()
     return render(request,'Crudi/Create.html',{form : form})
