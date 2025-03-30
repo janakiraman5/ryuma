@@ -14,3 +14,7 @@ def Create_view(request):
     if form.is_valid():
         forms.save()
     return render(request,'Crudi/Create.html',{form : form})
+
+def Delete_view(request.id):
+    student = Student.objects.get(id:id)
+    student.delete()
