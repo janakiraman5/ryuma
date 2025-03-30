@@ -11,6 +11,7 @@
             {%for st in student%}
             <td>{{st.sname}}</td>
             <td>{{st.sclass}}</td>
+             <td> <a href = '#'>update</a><a href = '/delete/{{st.id}}'>Delete</a></td>
         </tr>
         {%endfor%}
     </table>
